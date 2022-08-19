@@ -2,3 +2,166 @@
     font-family: norse-bold;
     src: url(./assets/Norse-Bold.otf);
 }
+
+:root {
+    --content-padding: 48px;
+    --form-margin: calc(2.4em);
+    --logo-height: 154px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background > img {
+    height: 100%;
+    width: auto;
+}
+
+.background {
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.text > p {
+    white-space: normal;
+    font-size: calc(8px + 1vw);
+    font-weight: bold;
+    padding: var(--content-padding);
+    width: 54ch;
+}
+
+label {
+    display: block;
+    color: hsl(215, 28%, 4%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+
+.form-couple {
+    display: inline-block;
+    width: 30%;
+    margin-right: calc(2.5 * var(--content-padding));
+    margin-top: 1em;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em 0.8em;
+    border-radius: 6px;
+    background-color: #fffefe;
+    border: 1px solid hsl(220, 13%, 76%);
+}
+
+#signup-form {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
+    padding: calc(var(--content-padding) * 0.5) var(--content-padding);
+    box-shadow: 2px 2px 6px 2px lightgray;
+}
+
+form > h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: -6px;
+    color: #1f2937;
+}
+
+input:invalid {
+    outline: 1px solid red;
+}
+
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 2px 2px 2px 1px lightgray;
+}
+
+button {
+    box-sizing: content-box;
+    margin: 2.2em var(--content-padding);
+    padding: 0.8em 2.2em;
+    width: 15ch;
+    background-color: hsl(196deg 43% 56%);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(196deg 43% 24%);
+    font-weight: bolder;
+}
+
+.already-registered {
+    margin-left: var(--content-padding);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: hsl(196deg 43% 36%);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 128px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.logo-couple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: norse-bold;
+    color: white;
+    font-size: calc(var(--logo-height) / 2);
+}
+
+.logo img {
+    height: var(--logo-height);
+    width: auto;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    margin: 1em auto;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.credit a {
+    color: white;
+    text-decoration: underline;
+}

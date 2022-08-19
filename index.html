@@ -5,9 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Odin - Sign Up</title>
 </head>
 <body>
+    <div class="background">
+        <img src="assets/background.jpg" alt="Mountains and a lake">
+        <div class="logo">
+            <div class="logo-couple">
+                <img src="assets/logo.png" alt="Company logo">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+        <div class="credit">
+            Photo by <a href="https://unsplash.com/@lachlangowen">Lachlan Gowen</a>
+            on <a href="https://unsplash.com/">Unsplash</a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
+            <br>
+            <br>
+            You <em>know</em> you want to.
+        </p>
+        <form id="signup-form" action="" method="POST">
+            <h2>Let's do this!</h2>
+            <p class="form-row">
+                <div class="form-couple">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+                
+                <div class="form-couple">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+            </p>
+            <p class="form-row">
+                <div class="form-couple">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-couple">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </p>
+            <p class="form-row">
+                <div class="form-couple">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                
+                <div class="form-couple">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </div>
+            </p>
+        </form>
+        <button type="submit" for="signup-form">Create Account</button>
+        <div class="already-registered">
+            Already have an account? <a href="wannababcie.com">Log in</a>
+        </div>
+    </div>
     
 </body>
 </html>
